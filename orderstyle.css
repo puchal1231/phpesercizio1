@@ -1,0 +1,27 @@
+#wrapper
+{
+	width: 1200px;
+	margin-right: auto;
+	margin-left: auto;
+	
+	
+}
+header
+{
+	text-align: center;
+}
+.prodotti>img
+{
+	width: 300px;
+	height: 200px;
+}
+.prodotti
+{
+
+	display: inline-block;
+	margin: 20px;
+}
+.prodotti>input
+{
+	text-align: center;
+}
