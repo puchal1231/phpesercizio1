@@ -5,10 +5,7 @@
 	<link rel="stylesheet" type="text/css" href="orderstyle.css">
 </head>
 <body>
-<?php  
-	
-
-echo '<div id="wrapper">
+<div id="wrapper">
 		<header>
 			<h1>Selezionare i prodotti desiderati.</h1>
 		</header>
@@ -47,10 +44,7 @@ echo '<div id="wrapper">
 		</div>
 	</div>
 	<input type="submit">
-	</form>'
-	;
-
-	?>
+	</form>
 
 </body>
 </html>
