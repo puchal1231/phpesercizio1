@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script type="text/javascript">
+	
+		function convert() 
+{
+	var initial = document.getElementById("a").value;
+    var final = document.getElementById("b").value;
+    var number = document.getElementById("value").value;
+
+	
+	
+	
+	document.getElementById("answer").innerHTML=initial;
+	 
+	
+}
+</script>
+</head>
+<body>
+	<div id="left">
+		da
+		<form>
+			<input type="radio" name="initial" id="a" value="celcius">Celcius<br/>
+			<input type="radio" name="initial" id="a" value="kelvin">Kelvin<br/>
+			<input type="radio" name="initial" id="a" value="fahrenheit">Fahrenheit<br/>
+		</form>
+	</div>
+<div id="right">
+	a
+	<form>
+		<input type="radio" name="final" id="b" value="celcius">Celcius<br/>
+		<input type="radio" name="final" id="b" value="kelvin">Kelvin<br/>
+		<input type="radio" name="final" id="b" value="fahrenheit">Fahrenheit<br/>
+	</form>
+</div>
+<div style="clear: both;"></div>
+<div id="down">
+		<form>
+			<input type="text" id="value" name="value">
+			<input type="submit" name="convert" value="calcola" onclick="convert()">
+		</form>
+	</div>
+	<div id="answer"></div>
+	
+</body>
+</html>
