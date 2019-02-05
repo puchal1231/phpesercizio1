@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript">
+		function check() 
+		{	
+			var x;
+			var y;
+			var k= 273.15;
+			var a = document.getElementById('1').checked;
+			var b = document.getElementById('2').checked;
+			var c = document.getElementById('3').checked;
+			var d = document.getElementById('4').checked;
+			var e = document.getElementById('5').checked;
+			var f = document.getElementById('6').checked;
+			var num = parseInt(document.getElementById("7").value);
+			var risultato;
+			if (a==true) {
+				x="celsius";
+			}
+			if (b==true) {
+				x="kelvin";
+			}
+			if (c==true) {
+				x="fahrenheit";
+			}
+			if (d==true) {
+				y="celsius";
+			}
+			if (e==true) {
+				y="kelvin";
+			}
+			if (f==true) {
+				y="fahrenheit";
+			}
+	
+
+			if (x=="celsius"&&y=="celsius") 
+			{
+				risultato=num;
+				document.getElementById("answer").innerHTML=risultato;
+			}
+			else if (x=="kelvin"&&y=="kelvin") 
+			{
+				risultato=num;
+				document.getElementById("answer").innerHTML=risultato;
+			}
+			else if (x=="fahrenheit"&&y=="fahrenheit") 
+			{
+				risultato=num;
+				document.getElementById("answer").innerHTML=risultato;
+			}
+			else if (x=="celsius" && y=="fahrenheit") 
+			{
+				risultato=1.8*num+32;
+				document.getElementById("answer").innerHTML=risultato;
+			}
+			else if (x=="kelvin" && y=="celsius") 
+			{
+				risultato=num-k;
+				document.getElementById("answer").innerHTML=risultato;
+			}
+			else if (x=="celsius" && y=="kelvin") 
+			{
+				risultato=num+k;
+				document.getElementById("answer").innerHTML=risultato;
+			}
+			else if (x=="kelvin" && y=="fahrenheit") 
+			{
+				risultato=18*(num-273)+32;
+				document.getElementById("answer").innerHTML=risultato;
+			}
+				else if (x=="fahrenheit" && y=="celsius") 
+			{
+				risultato=(num-32)/1.8;
+				document.getElementById("answer").innerHTML=risultato;
+			}
+				else if (x=="fahrenheit" && y=="kelvin") 
+			{
+				risultato=(5/9)*num+255.37;
+				document.getElementById("answer").innerHTML=risultato;
+			}
+
+
+
+
+			
+
+
+		}
+	</script>
+</head>
+<body>
+	<form>
+		<h1>DA</h1>
+		<input type="radio" name="test" id="1" value="celsius">Celsius<br/>
+		<input type="radio" name="test" id="2" value="kelvin">Kelvin<br/>
+		<input type="radio" name="test" id="3" value="fahrenheit">Fahrenheit<br/>
+		<h1>A</h1>
+		<input type="radio" name="test1" id="4" value="celsius">Celsius<br/>
+		<input type="radio" name="test1" id="5" value="kelvin">Kelvin<br/>
+		<input type="radio" name="test1" id="6" value="fahrenheit">Fahrenheit<br/>
+		<input type="number" name="num" id="7">
+		<input type="button" name="button" id="checkbutton" value="converti" onclick="check()">
+		<div id="answer"></div>
+	</form>
+
+</body>
+</html>
