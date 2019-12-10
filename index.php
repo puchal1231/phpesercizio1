@@ -5,6 +5,12 @@
 	<meta charset="utf-8">
 	<link rel="stylesheet" type="text/css" href="style.css">
 
+	<script>
+	let cazzi = () => {
+		alert("Un altro lorem ipsum");
+	}
+	</script>
+
 </head>
 <body>
 	<div id="wrapper">
@@ -13,7 +19,7 @@
 			<div class="nav"><a href="index.php">Home</a></div>
 			<div class="nav"><a href="order.php">Ordine online</a></div>
 			<div class="nav"><a href="https://www.google.com/maps/place/Antico+Forno+Capodimonte/@40.8687055,14.2349643,15z/data=!4m5!3m4!1s0x0:0x6935e6b4e7a678cf!8m2!3d40.8687055!4d14.2349643">Dove Siamo</a></div>
-			<div class="nav"><a href="#">Nostri prodotti</a></div>
+			<div class="nav"><a href="#" onclick="cazzi();">Nostri prodotti</a></div>
 		</nav>
 		<br/><br/><br/>
 		<main>
